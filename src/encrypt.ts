@@ -15,14 +15,19 @@ export function createEncrypter(key: number): Function {
         if (characterCode + shiftAmount > 90) {
           characterCode -= 26;
         }
-        characterCode += shiftAmount;
       } else if (characterCode <= 122 && characterCode >= 97) {
         // LowerCase Letter
         if (characterCode + shiftAmount > 122) {
           characterCode -= 26;
         }
-        characterCode += shiftAmount;
+      } else if (characterCode <= 39 && characterCode >= 30) {
+        // Digits
+        if (characterCode + shiftAmount > 39) {
+          characterCode -= 10;
+        }
       }
+
+      characterCode += shiftAmount;
       result += String.fromCharCode(characterCode);
     }
 
