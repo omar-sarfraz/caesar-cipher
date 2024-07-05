@@ -1,3 +1,5 @@
 export function createDecrypter(key: number): Function {
-  return () => console.log(key);
+  return (s: string): string => {
+    return s;
+  };
 }
