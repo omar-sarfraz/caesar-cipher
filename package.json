@@ -4,7 +4,7 @@
   "description": "Encrypt and Decrypt messages, email, phonenumbers, or name using Caesar Cipher",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && jest",
     "build": "tsc"
   },
   "repository": {
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/omar-sarfraz/caesar-cipher#readme",
   "devDependencies": {
+    "jest": "^29.7.0",
     "typescript": "^5.5.3"
   }
 }
