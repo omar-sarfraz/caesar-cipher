@@ -1,0 +1,32 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "Encrypt and Decrypt messages, email, phonenumbers, or name using Caesar Cipher",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omar-sarfraz/caesar-cipher.git"
+  },
+  "keywords": [
+    "caesar",
+    "cipher",
+    "phonenumber",
+    "email",
+    "messages",
+    "encryption",
+    "decryption"
+  ],
+  "author": "omar-sarfraz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omar-sarfraz/caesar-cipher/issues"
+  },
+  "homepage": "https://github.com/omar-sarfraz/caesar-cipher#readme",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
