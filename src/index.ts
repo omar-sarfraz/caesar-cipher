@@ -2,13 +2,15 @@ const createEncrypter = require("./encrypt");
 const createDecrypter = require("./decrypt");
 
 interface Cipher {
-  encrypt: Function;
-  decrypt: Function;
+    encrypt: Function;
+    decrypt: Function;
 }
 
 module.exports = function cipher(key: number): Cipher {
-  const encrypt = createEncrypter(key);
-  const decrypt = createDecrypter(key);
+    if (!key || key < 1) throw new Error("Key must be a positive integer greater than 0");
 
-  return { encrypt, decrypt };
+    const encrypt: Function = createEncrypter(key);
+    const decrypt: Function = createDecrypter(key);
+
+    return { encrypt, decrypt };
 };
