@@ -1,7 +1,8 @@
-const createCipher = require("./build/index.js");
+const { encrypt, decrypt } = require("./build/index");
 
 try {
-    const { encrypt, decrypt } = createCipher(0);
+    console.log(encrypt(5, "abc"));
+    console.log(decrypt(5, "abc"));
 } catch (e) {
-    console.log("Error => ", e.message);
+    console.log("Error => ", e);
 }
