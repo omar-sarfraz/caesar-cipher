@@ -1,5 +1,6 @@
 const cipher = require("../build/index.js");
-const { encrypt } = cipher(5);
+require("dotenv").config();
+const { encrypt } = cipher(process.env.TEST_CIPHER_KEY);
 
 describe("encrypt", () => {
   test("should convert abc to fgh", () => expect(encrypt("abc")).toBe("fgh"));
@@ -9,4 +10,6 @@ describe("encrypt", () => {
     expect(encrypt("omar.sarfraz@arbisoft.com")).toBe("trfw.xfwkwfe@fwgnxtky.htr"));
   test("should convert +92123456789 to +47678901234", () =>
     expect(encrypt("+92123456789")).toBe("+47678901234"));
+  test("should convert '' to ''", () => expect(encrypt("")).toBe(""));
+  test("should convert ABC to FGH", () => expect(encrypt("ABC")).toBe("FGH"));
 });

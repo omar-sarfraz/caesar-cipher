@@ -4,7 +4,7 @@
   "description": "Encrypt and Decrypt messages, email, phonenumbers, or name using Caesar Cipher",
   "main": "build/index.js",
   "scripts": {
-    "test": "npm run build && jest",
+    "test": "npm run build && jest --verbose --coverage",
     "build": "tsc"
   },
   "repository": {
@@ -29,5 +29,8 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
