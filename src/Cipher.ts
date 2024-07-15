@@ -12,9 +12,8 @@ export default class Cipher {
 
         for (let i = 0; i < s.length; i++) {
             let character = s[i];
-            let characterCode = character.charCodeAt(0);
 
-            let cipher = new Builder(characterCode, this.key);
+            let cipher = new Builder(character, this.key);
             result += cipher.get().encrypt();
         }
 
@@ -26,9 +25,8 @@ export default class Cipher {
 
         for (let i = 0; i < s.length; i++) {
             let character = s[i];
-            let characterCode = character.charCodeAt(0);
 
-            let cipher = new Builder(characterCode, this.key);
+            let cipher = new Builder(character, this.key);
             result += cipher.get().decrypt();
         }
 

@@ -10,7 +10,9 @@ interface BuilderType {
 export class Builder implements BuilderType {
     cipher;
 
-    constructor(characterCode: number, key: number) {
+    constructor(character: string, key: number) {
+        let characterCode = character.charCodeAt(0);
+
         if (characterCode <= 90 && characterCode >= 65) {
             this.cipher = new UpperCaseCipher(characterCode, key);
         } else if (characterCode <= 122 && characterCode >= 97) {
