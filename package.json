@@ -1,6 +1,6 @@
 {
     "name": "@omar-sarfraz/caesar-cipher",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "Encrypt and Decrypt messages, email, phonenumbers, or name using Caesar Cipher",
     "main": "build/index.js",
     "types": "build/index.d.ts",
