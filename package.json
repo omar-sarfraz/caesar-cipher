@@ -26,7 +26,7 @@
     "bugs": {
         "url": "https://github.com/omar-sarfraz/caesar-cipher/issues"
     },
-    "homepage": "https://github.com/omar-sarfraz/caesar-cipher#readme",
+    "homepage": "https://caesar-cipher-pi.vercel.app/",
     "devDependencies": {
         "@types/node": "^20.14.10",
         "dotenv": "^16.4.5",
