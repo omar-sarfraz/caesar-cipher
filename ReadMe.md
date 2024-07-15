@@ -37,3 +37,58 @@ console.log(encryptedVal); // yjxy@lrfnq.htr
 const decryptedVal = decrypt(encryptedVal);
 console.log(decryptedVal); // test@gmail.com
 ```
+
+## How to Contribute
+
+### 1. Fork the Repository
+
+Fork the repository to your own GitHub account and then clone it to your local machine.
+
+```
+git clone https://github.com/omar-sarfraz/caesar-cipher
+```
+
+### 2. Create a branch
+
+Create a new branch for your feature or bug fix. Use a descriptive name for your branch.
+
+```
+git checkout -b feature/your-feature-name
+```
+
+### 3. Install Dependencies
+
+Install the necessary dependencies using npm to run the project locally.
+
+```
+npm install
+```
+
+Then make your changes.
+
+### 4. Run Tests
+
+```
+npm test
+```
+
+### 5. Commit Your Changes
+
+Commit your changes with a descriptive commit message.
+
+```
+git add .
+git commit -m "Add feature/fix: Describe your changes here"
+```
+
+### 6. Push to Your Fork
+
+Push your branch to your forked repository on GitHub.
+
+```
+git push origin feature/your-feature-name
+```
+
+### 7. Create a Pull Request
+
+Go to the original repository on GitHub and create a pull request. Provide a clear and concise description of your changes and why they should be merged.
