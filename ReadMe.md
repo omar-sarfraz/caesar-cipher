@@ -2,7 +2,11 @@
 
 ## Overview
 
-The Caesar Cipher NPM package provides a simple and effective way to encrypt and decrypt data using the Caesar cipher technique. This package can be used to enhance the security of your applications by encrypting sensitive information.
+The [Caesar Cipher](https://caesar-cipher-pi.vercel.app/) NPM package provides a simple and effective way to encrypt and decrypt data using the Caesar cipher technique. This package can be used to enhance the security of your applications by encrypting sensitive information.
+
+## Demo
+
+Check out the demo [Here](https://caesar-cipher-pi.vercel.app/)
 
 ## Use Cases
 
@@ -25,17 +29,19 @@ npm i @omar-sarfraz/caesar-cipher
 ## Usage Example
 
 ```
-const createCipher = require("@omar-sarfraz/caesar-cipher");
+const { encrypt, decrypt } = require("@omar-sarfraz/caesar-cipher");
 
-const { encrypt, decrypt } = createCipher(5);
+try {
+    const val = "test@gmail.com";
 
-const val = "test@gmail.com";
+    const encryptedVal = encrypt(5, val);
+    console.log(encryptedVal); // yjxy@lrfnq.htr
 
-const encryptedVal = encrypt(val);
-console.log(encryptedVal); // yjxy@lrfnq.htr
-
-const decryptedVal = decrypt(encryptedVal);
-console.log(decryptedVal); // test@gmail.com
+    const decryptedVal = decrypt(5, encryptedVal);
+    console.log(decryptedVal); // test@gmail.com
+} catch (e) {
+    console.log("Error =>", e.message);
+}
 ```
 
 ## How to Contribute
